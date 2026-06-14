@@ -3,8 +3,6 @@ const multer = require('multer');
 const store = require("../src/service/storage.service");
 const model= require("../src/model/post.model");
 
-
-
 const app = express();
 
 app.use(express.json());
@@ -17,12 +15,12 @@ app.post('/upload',upload.single('image'),async(req,res)=>{
         image:result.url,
         caption:req.body.caption
     })
-    res.status(200).json(post);
+    return res.status(200).json({message: "Post created successfully",post});
 })
 
 app.get('/posts',async(req,res)=>{
     const posts = await model.find();
-    res.status(200).json(posts);
+    return res.status(200).json({message: "Posts fetched successfully", posts});
 })
 
 module.exports = app;

@@ -1,6 +1,6 @@
 const ImageKit = require('@imagekit/nodejs');
 
-const image = new Imagekit({
+const image = new ImageKit({
     privateKey: process.env.PRIVATE_KEY,
 })
 
