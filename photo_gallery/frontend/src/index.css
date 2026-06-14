@@ -1,0 +1,110 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  }
+
+body {
+background-color: #fafafa;
+color: #262626;
+}
+
+/* CONTAINER */
+section {
+max-width: 500px;
+margin: 40px auto;
+padding: 0 15px;
+}
+.create-post {
+background: #fff;
+padding: 20px;
+border: 1px solid #dbdbdb;
+border-radius: 8px;
+}
+
+.create-post h1 {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.create-post form {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.create-post input[type="file"] {
+border: 1px solid #ccc;
+padding: 8px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.create-post input[type="text"] {
+padding: 10px;
+border: 1px solid #dbdbdb;
+border-radius: 5px;
+font-size: 14px;
+}
+
+.create-post button {
+padding: 10px;
+background-color: #0095f6;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-weight: bold;
+}
+
+.create-post button:hover {
+background-color: #0077cc;
+}
+
+.create-post button:disabled {
+background-color: #b2dffc;
+cursor: not-allowed;
+}
+.feed {
+display: flex;
+flex-direction: column;
+gap: 25px;
+}
+
+/* POST CARD */
+.post {
+background: #fff;
+border: 1px solid #dbdbdb;
+border-radius: 8px;
+overflow: hidden;
+transition: transform 0.2s ease;
+}
+
+.post:hover {
+transform: scale(1.01);
+}
+
+/* IMAGE */
+.post img {
+width: 100%;
+height: auto;
+max-height: 500px;
+object-fit: cover;
+display: block;
+}
+
+/* CAPTION */
+.post p {
+padding: 10px 15px;
+font-size: 14px;
+line-height: 1.4;
+}
+
+/* EMPTY STATE */
+.feed p {
+text-align: center;
+color: #777;
+}
