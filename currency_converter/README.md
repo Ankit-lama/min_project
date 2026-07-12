@@ -45,10 +45,10 @@ currency-converter/
 4. App fetches live exchange rate from API
 5. Displays converted value
 
-
+---
 ## 🌐 Live Demo
 https://currencyconvertor-ruby.vercel.app/
-```
+
 
 
 
