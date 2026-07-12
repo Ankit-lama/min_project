@@ -47,8 +47,6 @@ currency-converter/
 
 
 ## 🌐 Live Demo
-
-```
 https://currencyconvertor-ruby.vercel.app/
 ```
 
